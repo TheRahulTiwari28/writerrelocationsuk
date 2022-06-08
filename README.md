@@ -1,2 +1,2 @@
 ﻿# writerrelocationsuk
-Website: https://writerrelocations-usa.netlify.app/
+Website: https://writerrelocations-uk.netlify.app/
