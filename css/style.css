@@ -132,7 +132,7 @@ nav .wrapper{
     border-left: 1px solid rgb(164, 164, 164);
 }
 
-.content .row header{
+.content .row header a{
     color: #FEB72C;
     font-size: 16px;
     font-weight: 500;
