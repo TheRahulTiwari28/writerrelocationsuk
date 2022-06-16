@@ -437,6 +437,9 @@ a.button {
     font-weight: 600;
     margin: 16px 0;
 }
+.left-info p{
+    font-size: 18px;
+}
 
 .testimonial{
     background-repeat: no-repeat;
