@@ -3,10 +3,14 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Roboto', sans-serif;
 }
 html{
     scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif !important;
+    color: #646464!important;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
 }
 nav{
     position: fixed;
@@ -25,24 +29,31 @@ nav .wrapper{
     justify-content: space-between;
 }
 .wrapper .logo a img{
-    width: 220px;
-    margin-right: 200px;
+    width: 190px;
+    margin-bottom: 10px;
+    margin-left: -40px;
 }
-
+.col-md-9{
+    flex: 0 0 75%;
+    width: 75%;
+}
 .rightnav .getintouch{
     text-align: right;
+    margin-top: -11px;
 }
 .rightnav .getintouch .active{
     background: #FEB72C;
     color: #000;
-    padding: 14px 18px;
+    padding: 12px 14px;
 }
 .rightnav .getintouch a{
     font-size: 14px;
     text-decoration: none;
     color: #aaa;
     font-weight: 400;
+    line-height: 15px;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 .rightnav .getintouch a i{
     padding: 10px 5px;
@@ -52,6 +63,7 @@ nav .wrapper{
 }
 .wrapper .nav-links{
     display: inline-flex;
+    margin-left: 100px;
 }
 .nav-links li{
     list-style: none;
@@ -78,6 +90,7 @@ nav .wrapper{
 .nav-links .navline{
     width: 101px;
     padding: 0;
+    line-height: 20px;
     margin: 0 20px;
     text-align: center;
 }
@@ -87,22 +100,24 @@ nav .wrapper{
 .nav-links .drop-menu{
     position: absolute;
     background: #fff;
-    width: 180px;
-    line-height: 35px;
+    width: 250px;
+    line-height: 30px;
     top: 100%;
     opacity: 0;
+    padding: 20px;
     visibility: hidden;
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box{
     transition: all 0.3s ease;
-    top: 100%;
+    top: 90%;
     opacity: 1;
     visibility: visible;
 }
 .drop-menu li a{
     width: 100%;
+    line-height: 24px;
     display: block;
     padding: 0 0 0 15px;
     font-weight: 400;
@@ -110,32 +125,32 @@ nav .wrapper{
 }
 .mega-box{
     position: absolute;
-    left: 0;
-    width: 100%;
-    padding: 0 30px;
+    left: -30%;
+    width: 1200px;
+    padding: 0 10px;
     top: 85px;
     opacity: 0;
     visibility: hidden;
 }
 .mega-box .content{
     background: #fff;
-    padding: 25px 20px;
+    padding: 20px 40px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 .mega-box .content .row{
-    width: calc(25% - 30px);
-    line-height: 35px;
-    padding: 0 15px;
+    width: calc(55% - 30px);
+    line-height: 25px;
+    padding: 0 10px;
     border-left: 1px solid rgb(164, 164, 164);
 }
 
 .content .row header a{
     color: #FEB72C;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .content .row .mega-links{
     margin-left: -40px;
@@ -145,15 +160,14 @@ nav .wrapper{
     border-left: none;
 }
 .row .mega-links li{
-    padding: 0 20px;
+    padding: 0 40px;
 }
 .row .mega-links li a{
     padding: 0px;
-    padding: 0 20px;
-    color: #555;
+    color: #30373C;
     font-size: 16px;
     display: block;
-    font-weight: normal;
+    font-weight: lighter;
 }
 .wrapper .btn{
     color: #000000;
@@ -174,7 +188,13 @@ nav .wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* margin-right: 0; */
+        margin-left: -15px;
+    }
+    .logo{
+        margin-right: 35%;
+    }
+    .wrapper .nav-links{
+        margin-left: 0px;
     }
     .wrapper .logo a img{
         margin: auto;
@@ -213,13 +233,7 @@ nav .wrapper{
     #close-btn:checked ~ .btn.menu-btn{
         display: block;
     }
-    .rightnav{
-       /* display: flex;
-       justify-content: space-between; */
-        margin: auto;
-
-       /* margin-right: 0; */
-    }
+    
     .rightnav .getintouch{
         display: none;
     }
@@ -312,7 +326,7 @@ nav .wrapper{
 }
 nav input{
     display: none;
-}   
+} 
 
 .scrollToTop-btn{
     z-index: 999;
@@ -337,9 +351,10 @@ nav input{
     opacity: 1;
     pointer-events: auto;
 }
-/* .container-sm{
-    overflow: hidden;
-} */
+.container-sm{
+    width: 1300px !important;
+    margin: auto;
+}
 .back-image{
     background-repeat: no-repeat;
     height: 70vh;
@@ -361,7 +376,7 @@ nav input{
 
 .paragraph{
     font-size: 16px;
-    color: #646464;
+    color: #5a5a5a;
     text-align: justify;
     font-weight: normal;
 }
@@ -379,7 +394,9 @@ nav input{
     background-color: #efefef;
     color: #000;
     text-align: center;
-    padding: 10px
+    padding: 10px;
+    border: 0;
+    border-radius: 0;
 }
 .card h4{
     display: block;
@@ -436,9 +453,12 @@ a.button {
     font-size: 20px;
     font-weight: 600;
     margin: 16px 0;
+    color: #000000;
+
 }
 .left-info p{
     font-size: 18px;
+    color: #646464;
 }
 
 .testimonial{
@@ -448,22 +468,18 @@ a.button {
     background-size: cover;
     display: flex;
     justify-content: center;
-    position: relative;
     text-align: center;
+    /* position: relative; */
     margin-bottom: 0;
 }
 
 .testimonial-text{
     text-align: center;
+    max-width: 800px;
     height: 50vh;
     margin: auto;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
 }
 .testimonial-text h1 {
     color: #FEB72C;
@@ -484,6 +500,7 @@ a.button {
     font-weight: normal;
 }
 .client-logos{
+    color: #000000;
     text-align: center;
     margin: 50px auto;
 }
